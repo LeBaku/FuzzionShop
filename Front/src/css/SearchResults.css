@@ -1,0 +1,55 @@
+.product-container {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.card {
+    background-color: white;
+    border: 3px solid #dd435e;
+    border-radius: 35px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    max-height: 370px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card img {
+    max-width: 150px;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin: 2px 0px;
+}
+
+.card-button {
+    background: linear-gradient(90deg, rgba(221,67,94,1) 0%, rgba(242,183,21,1) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: #005ea2;
+}

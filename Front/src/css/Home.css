@@ -1,0 +1,101 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.top-section {
+    display: flex;
+    flex: 4;
+}
+
+.left-column {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+.left-content {
+    text-align: left;
+}
+
+.home-logo {
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.montserrat-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right-column {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.logo-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .home-container {
+      height: auto; /* Réinitialisez la hauteur */
+    }
+  
+    .top-section {
+      flex-direction: column; /* Les sections sont empilées les unes sur les autres */
+    }
+  
+    .left-column {
+      margin: 5% 5%; /* Réduisez la marge verticale */
+    }
+
+    .home-logo {
+        width: 300px; /* Réduisez la taille du logo pour les écrans mobiles */
+        margin-bottom: 10px; /* Réduisez la marge inférieure du logo */
+        margin: 0 auto;
+      }
+
+      .montserrat-text {
+        font-size: 16px; /* Réduisez la taille du texte pour les écrans mobiles */
+      }
+  
+    .right-column {
+      display: none; /* Cachez la colonne de droite */
+    }
+  
+    .logo-grid img {
+        max-width: 80%;
+        margin: 0 auto
+    }
+    .logo-grid {
+      grid-template-columns: 1fr; /* Un logo par ligne */
+      grid-gap: 10px;
+    }
+    .bottom-section {
+        margin-bottom: 20px;
+    }
+  }
